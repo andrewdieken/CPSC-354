@@ -5,16 +5,10 @@ This is a blog for the class CPSC-354 Programming Languages. Team members includ
 
 # Exercises
 
-## 1)Termination
-**Exercise:** Show that the two programs
+**Exercise (Algorithms):** Choose a simple algorithm and formulate it as a rewriting system as in the exercise on sorting above. *Write a blog post about it.* Add in as much as you want and can of the material we learned so far.
 
-    while m =/= n do
-      if m > n then m := m — n else n := n — m
+### Answer:
 
-and
+**Exercise:** Write a program in your programming language that contains a while loop or recursive calls and show termination by exhibiting a measure function. Write a blog post about it.
 
-    while m =/= n  do
-      if m > n then m : = m — n
-      else begin h :=m; m :=n; n := h end
-
-terminate. Are there any assumptions you need do make the argument work?
+### Answer:

@@ -7,8 +7,8 @@ This is a blog for the class CPSC-354 Programming Languages. Team members includ
 
 **Exercise (Algorithms):** Choose a simple algorithm and formulate it as a rewriting system as in the exercise on sorting above. *Write a blog post about it.* Add in as much as you want and can of the material we learned so far.
 
-#### Answer:
+- Answer:
 
 **Exercise:** Write a program in your programming language that contains a while loop or recursive calls and show termination by exhibiting a measure function. Write a blog post about it.
 
-#### Answer:
+- Answer:

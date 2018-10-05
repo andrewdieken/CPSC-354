@@ -4,7 +4,10 @@ This is a blog for the class CPSC-354 Programming Languages. Team members includ
 # Why we chose Haskell
 
 # Project
+keep it simple
+### Examples:
 - implement a calculator
+- spam filter
 
 # Exercises
 

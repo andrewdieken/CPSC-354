@@ -15,9 +15,13 @@ keep it simple
 
 - Answer.
 
-⋅⋅⋅diff(0,x) -> 0
-⋅⋅⋅diff(x,0) -> x
-⋅⋅⋅diff(s(y),s(x)) -> s(diff(y,x))
+|diff(0,x) -> 0|
+---
+|diff(x,0) -> x|
+---
+|diff(s(y),s(x)) -> s(diff(y,x))|
+
+
 
 -add extra examples
 

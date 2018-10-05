@@ -13,7 +13,7 @@ keep it simple
 
 **Exercise (Algorithms):** Choose a simple algorithm and formulate it as a rewriting system as in the exercise on sorting above. *Write a blog post about it.* Add in as much as you want and can of the material we learned so far.
 
-- Answer
+- Answer.
 
 ⋅⋅⋅diff(0,x) -> 0
 ⋅⋅⋅diff(x,0) -> x

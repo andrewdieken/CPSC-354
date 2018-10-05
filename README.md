@@ -5,7 +5,7 @@ This is a blog for the class CPSC-354 Programming Languages. Team members includ
 
 # Project
 keep it simple
-### Examples:
+#### Examples:
 - implement a calculator
 - spam filter
 

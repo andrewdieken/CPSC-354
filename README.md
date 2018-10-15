@@ -34,3 +34,5 @@ keep it simple
 - Answer:
 
 **Exercise:** Go back to your class on data structures and algorithms and find an algorithm based on a while-loop and analyse it from the point of view of invariants and partial correctness.
+
+- Answer:

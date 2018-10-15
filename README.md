@@ -5,6 +5,12 @@ This is a blog for the class CPSC-354 Programming Languages. Team members includ
 
 # Project
 keep it simple
+#### Dates:
+- Concept Stage: 10/19
+- Definition Stage: 10/29
+- Development Stage: 11/28
+- Testing Stage: 12/7
+
 #### Examples:
 - implement a calculator
 - spam filter

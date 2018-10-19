@@ -4,7 +4,9 @@ This is a blog for the class CPSC-354 Programming Languages. Team members includ
 # Why we chose Haskell
 
 # Project
-keep it simple
+Truth Table
+- Download Haskell: https://www.haskell.org/platform/mac.html
+- Documentation: file:///Library/Haskell/ghc-8.4.3-x86_64/doc/start.html
 #### Dates:
 - Concept Stage: 10/19
 - Definition Stage: 10/29

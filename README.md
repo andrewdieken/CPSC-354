@@ -5,7 +5,7 @@ This is a blog for the class CPSC-354 Programming Languages. Team members includ
 
 # Project
 #### Truth Table
-The first exercise is to implement truth tables for formulas of propositional logic. We can use these to decide whether a formula is a tautology (true in all interpretations) or satisfiable (true in at least one interpretation). The output could just be this classification, or it could be the full truth table, showing the value of the formula under each interpretation.
+Implement truth tables for formulas of propositional logic. We can use these to decide whether a formula is a tautology (true in all interpretations) or satisfiable (true in at least one interpretation). The output could just be this classification, or it could be the full truth table, showing the value of the formula under each interpretation.
 
 - Download Haskell: https://www.haskell.org/platform/mac.html
 - Documentation: file:///Library/Haskell/ghc-8.4.3-x86_64/doc/start.html

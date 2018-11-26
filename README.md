@@ -44,3 +44,4 @@ Implement truth tables for formulas of propositional logic. We can use these to 
 **Exercise:** Go back to your class on data structures and algorithms and find an algorithm based on a while-loop and analyse it from the point of view of invariants and partial correctness.
 
 - Answer: Binary Search algorithm
+measure funtion = length of input array. measure funton you want to get less and less and with each recursive call you're cuttibng the input aray in half.

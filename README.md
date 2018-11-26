@@ -32,7 +32,7 @@ Implement truth tables for formulas of propositional logic. We can use these to 
 
 **Exercise:** Write a program in your programming language that contains a while loop or recursive calls and show termination by exhibiting a measure function. Write a blog post about it.
 
-- Answer: The below function allows the user to calculate the fibonacci number given an integer. The function shows termination on line 2. The function returns when the input equals 0. The function makes a recursive call on line 4 adding the previous 2 numbers together.
+- Answer: The below function allows the user to calculate the fibonacci number of a given input(integer). The function shows termination on line 2. The function returns when the input equals 0. The function makes a recursive call on line 4 adding the previous 2 numbers together.
 
  1) fib :: Integer -> Integer --function declaration
  2) fib 0 = 0                 --function definition

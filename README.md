@@ -30,9 +30,6 @@ Implement truth tables for formulas of propositional logic. We can use these to 
   - diff(s(y),s(x)) -> s(diff(y,x))
 
 
-
--add extra examples
-
 **Exercise:** Write a program in your programming language that contains a while loop or recursive calls and show termination by exhibiting a measure function. Write a blog post about it.
 
 - Answer:

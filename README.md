@@ -3,6 +3,10 @@ This is a blog for the class CPSC-354 Programming Languages. Team members includ
 
 # Why we chose Haskell
 
+Hello everyone, we are excited to begin our Programming Languages class at Chapman University this Fall (2018), and we look forward to learning much about a new language. For our project, we've decided to choose Haskell for some purely-functional programming, which we've always wanted to learn but haven't ever had much of an excuse to since it isn't object-oriented. We expect learning the language will be challenging since Haskell fits under a different programming paradigm than all of the other languages we've learned up to this point.
+
+As for the project itself, we haven't yet decided what to do with Haskell. we've read that it's very useful in some situations, such as anti-spam and cryptocurrency verification purposes, but that it has also been criticized for its lazy-evaluation model. Nevertheless, we are optimistic about our work with Haskell and expect it to be a very different programming experience than any that we've learned so far.
+
 # Project
 #### Truth Table
 Implement truth tables for formulas of propositional logic. We can use these to decide whether a formula is a tautology (true in all interpretations) or satisfiable (true in at least one interpretation). The output could just be this classification, or it could be the full truth table, showing the value of the formula under each interpretation.

@@ -34,11 +34,12 @@ Implement truth tables for formulas of propositional logic. We can use these to 
 
 - Answer: The below function allows the user to calculate the fibonacci number of a given input(integer). The function shows termination on line 2. The function returns when the input equals 0. The function makes a recursive call on line 4 adding the previous 2 numbers together.
 
- 1) fib :: Integer -> Integer --function declaration
- 2) fib 0 = 0                 --function definition
- 3) fib 1 = 1
- 4) fib n = fib(n-1) + fib(n-2)
- 
+```haskell
+fib :: Integer -> Integer --function declaration
+fib 0 = 0                 --function definition
+fib 1 = 1
+fib n = fib(n-1) + fib(n-2)
+``` 
  
 
 **Exercise:** Go back to your class on data structures and algorithms and find an algorithm based on a while-loop and analyse it from the point of view of invariants and partial correctness.

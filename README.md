@@ -46,17 +46,19 @@ Implement truth tables for formulas of propositional logic. We can use these to 
 - Answer: Binary Search algorithm
 measure funtion = length of input array. measure funton you want to get less and less and with each recursive call you're cuttibng the input aray in half.
 
-1) def binarySearch(arr, element):
-2)     first = 0
-3)     last = len(arr)-1
-4)     found = False
-5)     while first <= last and not found:
-6)         mid = (first+last) / 2
-7)         if arr[mid] == element:
-8)             found = True
-9)         else:
-10)            if element < arr[mid]:
-11)                last = mid - 1
-12)            else:
-13)                first = mid + 1
-14)    return found
+```python
+def binarySearch(arr, element):
+  first = 0
+  last = len(arr)-1
+  found = False
+  while first <= last and not found:
+    mid = (first+last) / 2
+    if arr[mid] == element:
+      found = True
+    else:
+      if element < arr[mid]:
+        last = mid - 1
+      else:
+        first = mid + 1
+        return found
+```

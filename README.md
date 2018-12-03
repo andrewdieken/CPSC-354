@@ -7,7 +7,7 @@ Hello everyone, we are excited to begin our Programming Languages class at Chapm
 
 As for the project itself, we haven't yet decided what to do with Haskell. we've read that it's very useful in some situations, such as anti-spam and cryptocurrency verification purposes, but that it has also been criticized for its lazy-evaluation model. Nevertheless, we are optimistic about our work with Haskell and expect it to be a very different programming experience than any that we've learned so far.
 
-#Presentations
+# Presentations
 
 ### Andrew
 #### Topic: There are no loops in Haskell. The only way to iterate is with recursion.

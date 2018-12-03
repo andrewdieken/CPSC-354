@@ -7,6 +7,18 @@ Hello everyone, we are excited to begin our Programming Languages class at Chapm
 
 As for the project itself, we haven't yet decided what to do with Haskell. we've read that it's very useful in some situations, such as anti-spam and cryptocurrency verification purposes, but that it has also been criticized for its lazy-evaluation model. Nevertheless, we are optimistic about our work with Haskell and expect it to be a very different programming experience than any that we've learned so far.
 
+#Presentations
+
+###Andrew
+####Topic: There are no loops in Haskell. The only way to iterate is with recursion.
+
+This is because Haskell is a Declarative language
+###Matt
+####Topic:
+
+###Alberto
+###Topic:
+
 # Project
 #### Truth Table
 Implement truth tables for formulas of propositional logic. We can use these to decide whether a formula is a tautology (true in all interpretations) or satisfiable (true in at least one interpretation). The output could just be this classification, or it could be the full truth table, showing the value of the formula under each interpretation.

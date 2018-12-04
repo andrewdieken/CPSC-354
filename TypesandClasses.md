@@ -1,9 +1,11 @@
 # Types of Classes
 
   ## Basic Concepts
+  
     A type is a collection of related values. An example would be that type **Bool** contains two values **False** and **True**.
     
     ```
+    
     False :: Bool
     
     True :: Bool

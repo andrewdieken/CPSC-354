@@ -16,7 +16,7 @@ There are no loops in Haskell. The only way to iterate is with recursion.
 This is because Haskell is a Declarative language.
 
 ### Matt
-#### Topic:
+#### Topic: History of Haskell and Lazy Evaluation
 
 ### Alberto
 ### Topic: Functional Programming

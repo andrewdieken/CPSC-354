@@ -1,5 +1,5 @@
 # CPSC-354
-This is a blog for the class CPSC-354 Programming Languages. Team members include: Andrew Dieken, Matt McCortney, Alberto G. 
+This is a blog for the class CPSC-354 Programming Languages. Team members include: Andrew Dieken, Matt McCortney, Alberto Garibay. 
 
 # Why we chose Haskell
 
@@ -19,7 +19,7 @@ This is because Haskell is a Declarative language.
 #### Topic:
 
 ### Alberto
-### Topic:
+### Topic: Functional Programming
 
 # Project
 #### Truth Table

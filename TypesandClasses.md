@@ -8,12 +8,12 @@
 
 ## Tuple Types
 
-# Function Types
+## Function Types
 
-# Curried Functions
+## Curried Functions
 
-# Polymorphic Types
+## Polymorphic Types
 
-# Overloaded Types
+## Overloaded Types
 
-# Basic Classes
+## Basic Classes

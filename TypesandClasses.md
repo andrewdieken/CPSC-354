@@ -51,14 +51,87 @@
   
   ## List Types
   
+  A list is a sequence of elements of the same type, with the elements being enclosed in square parentheses and separated by commas. 
+  
+  Examples of lists in Haskell:
+  
+  ```
+  [False,True,False] :: [Bool]
+  
+  ['a','b','c','d'] :: [Char]
+  
+  ["One","Two","Three"] :: [String]
+  ```
+  In haskell you can have lists of lists
+  Ex: 
+  
+  ```
+  [['a','b'],['c','d','e']] :: [[Char]]
+  ```
+  
   ## Tuple Types
+  
+  A tuple is a finite sequence of components of possibly different types, with the components being enclosed in round parentheses and separated by commas. 
+  
+  Example of Tuples:
+  
+  ```
+  (False,True) :: (Bool:Bool)
+  
+  (False,'a',True) :: (Bool,Char,Bool)
+  
+  ("Yea",True,'a') :: (String,Bool,Char)
+  ```
+  
+  The number of components in a tuple is called its arity. The tuple (0 of arity zero is called the empty tuple, tuples of arity two are called pairs, tuples of arity three are called triples. 
 
   ## Function Types
+  
+  A function is a mapping from arguments of one type to results of another type. 
+  Example of a function:
+  
+  ```
+  not :: Bool -> Bool
+  
+  even :: Int -> Bool
+  ```
+  
+  The library function *even* decideds if an integer is even and because there are no restrictions on the types of the arguments and the results of a function the simple notation of a function with a single argument and a single result is already sufficent to handle the case of multiple arguments and results. 
+  
+  Another exmpale would be to creat a function called *add* that calculates the sum of a pair of integers and a function *zeroto* that returns the list of integers from zero toa give limit. 
+  
+  ```
+  add :: (Int,Int) -> Int
+  add(x,y) = x+y
+  
+  zeroto :: Int -> [Int]
+  zeroto n = [0..n]
+  ```
+  There are no restrictions that functions must be total on their argument type, in the sense that there may be some arguments for which the result is not defined. 
 
   ## Curried Functions
-
+  A curried function is a function with multiple arguments that can also be handled in another. Functions are free to retunr functions as reults so it allows this to be possible. 
+  Example:
+  
+  ```
+  add' :: Int -> (int -> Int)
+  add' x y = x+y
+  ```
+  The type state that *add'* is a fucntion that takes an argument of type *Int* and returns a result that is a function of type *Int -> Int*. 
+  
+  Functions with more than two arguments can also be handled using the same technique by returing functions that can return functions and so on. 
+  Example: 
+  
+  ```
+  mult :: Int -> (int -> (Int -> Int))
+  
+  mult x y z = x*y*z
+  ```
+  
+  Functions that take their arguments one at a time are called curried functions. Curried functions are more flecible thatn functions on tuples, becuase useful functions can often be made by parially applying a curried function with less thatn its full complement of arguments. 
+  
   ## Polymorphic Types
-
+  
   ## Overloaded Types
 
   ## Basic Classes

@@ -24,7 +24,7 @@ Python
 ```python
 def length(arr):
   length = 0
-  for i in range(len(arr)):
+  for item in arr:
     length += 1
   return length
 ```

@@ -50,7 +50,7 @@
   This type is similiar to **Floati** except that twice as much memory is used for storage of these numbers to increase therir precision. 
   
   ## List Types
-
+  
   ## Tuple Types
 
   ## Function Types

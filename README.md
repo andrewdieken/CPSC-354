@@ -49,6 +49,26 @@ sum' [] = 0
 sum' (_:xs) x + sum' xs
 ```
 
+- Example: fibonacci
+
+Python
+```python
+def fib(n):
+  if n == 0:
+    return 0
+  elif n == 1:
+    return 1
+  else:
+    return fib(n-1) + fib(n-2)
+```
+Haskell
+```haskell
+fib :: Int -> Int
+fib 0 = 0
+fib 1 = 1
+fib x = fib(x-1) + fib(x-2)
+```
+
 ### Matt
 #### Topic: History of Haskell and Lazy Evaluation
 

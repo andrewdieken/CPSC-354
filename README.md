@@ -32,6 +32,23 @@ length' [] = 0
 length' (_:xs) = 1 + length' xs
 ```
 
+- Example: sum function
+
+Python
+```python
+def sum(arr):
+  sum = 0
+  for item in arr:
+    sum += item
+  return sum
+```
+Haskell
+```haskell
+sum' :: [a] -> Int
+sum' [] = 0
+sum' (_:xs) x + sum' xs
+```
+
 ### Matt
 #### Topic: History of Haskell and Lazy Evaluation
 

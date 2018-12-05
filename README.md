@@ -15,8 +15,8 @@ As for the project itself, we haven't yet decided what to do with Haskell. we've
 There are no loops in Haskell. The only way to iterate is with recursion.
 This is because Haskell is a Declarative language.
 
-- Example
-[length function]
+- Example: length function
+
 Python
 ```python
 def length(arr):

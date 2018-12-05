@@ -132,6 +132,23 @@
   
   ## Polymorphic Types
   
-  ## Overloaded Types
-
+  Before getting into polymorphic types it is important to understant type varibales. Type variables must begin with a lower-case letter and are usually simple named. 
+  
+  So a type that contains one or more type varibales is called poulmorphic as is an expression with such a type. 
+  
+  An example would be the legnth function that calculets the length of any list ddespite its type of the elements within the list.
+  
   ## Basic Classes
+  
+  A class is a collection of types that support certain overloaded operations called methods. Haskel provides a numver of basic classes that are built in to the language.
+  
+  Some of these consist of:
+  - Eq-equality types
+  - Ord-ordered types
+  - Show-showable types
+  - Read-readable types
+  - Num-numeric types
+  - Integral-integral types
+  - Fractional-fractional types
+  
+  

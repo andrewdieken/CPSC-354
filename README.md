@@ -44,9 +44,9 @@ def sum(arr):
 ```
 Haskell
 ```haskell
-sum' :: [a] -> Int
-sum' [] = 0
-sum' (_:xs) x + sum' xs
+sum :: [a] -> Int
+sum [] = 0
+sum (_:xs) x + sum' xs
 ```
 
 - Example: fibonacci

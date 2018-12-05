@@ -32,3 +32,28 @@ not True = False
 ```
 
 Functions with more than one argument can alse be defined useing pattern matching in which case the patterns for each argument are matched in order within each equation. 
+
+## Operator Sections
+
+Functions such as + that are written between their two arguments are called operators. 
+An example of thise would be:
+
+```
+(#) = \x -> (\y -> x # y)
+
+(x #) = \y -> x # y
+
+(# y) = \x -> x # y
+```
+Sections have three primary applications. They can be used to construct a number of simple but useful functions in a particularly compact way. 
+
+```
+(+_ is the addition function \x -> (\y -> x+y)
+
+(1+) is the successor function \y -> 1+y
+
+(1/) is the reciprocation function \y -> 1/y
+
+(*2) is the doubling function \x -> x*2
+
+(/2) is the halving fucntion \x -> x/2

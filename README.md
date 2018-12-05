@@ -30,7 +30,7 @@ Haskell
 ```haskell
 length :: [a] -> Int
 length [] = 0
-length (_:xs) = 1 + length' xs
+length (_:xs) = 1 + length xs
 ```
 
 - Example: sum function
@@ -47,7 +47,7 @@ Haskell
 ```haskell
 sum :: [a] -> Int
 sum [] = 0
-sum (_:xs) x + sum' xs
+sum (_:xs) x + sum xs
 ```
 
 - Example: fibonacci

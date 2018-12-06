@@ -246,6 +246,15 @@ subsets :: Prop -> [Subst]
 subsets p = map (zip vs) (bools (length vs)) where vs = rmdups (vars p)
 ```
 
+So, if we call our function 'subsets' on our proposition 'p2' our output would be:
+```haskell
+> subsets p2
+[[('A', False), ('B', False)],
+ [('A', False), ('B', True)],
+ [('A', True), ('B', False)],
+ [('A', True), ('B', True)]]
+```
+
 
 
 #### Dates:

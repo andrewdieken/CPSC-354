@@ -212,12 +212,19 @@ However, after thinking about our function this way we thought of a better way. 
 So now we can think of our output as:
 
 False|False False
+
 False|False True 
+
 False|True False 
+
 False|True True  
+
 True |False False
+
 True |False True 
+
 True |True False 
+
 True |True True  
 
 

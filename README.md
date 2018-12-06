@@ -215,6 +215,7 @@ So now we can think of our output as:
 |False|False True |
 |False|True False |
 |False|True True  |
+|:----|:---------:|
 |True |False False|
 |True |False True |
 |True |True False |

@@ -227,6 +227,26 @@ True |True False
 
 True |True True  
 
+We define our funtion 'bools' as follows:
+```haskell
+bools :: Int -> [[Bool]]
+bools 0 = [[]]
+bools n = map (False:) bss ++ map (True:) bss where bss = bools (n-1)
+```
+
+Again, our function above is going to generate all possible lists of logical values for the given input.
+
+Now time for our final step! We need to define a function that is going to generate all possible substitutions for a proposition by extracting its variables, removig duplicates from this list, generating all possible lists of ligical values for this many variables, and then we will zip the list of variables with each of the results. Some things to note first:
+  - we will remove duplicates using the function rmdups
+  - we will generate all possible lists of logical values by using our funtion bools we defined above
+  
+Our function:
+```haskell
+subsets :: Prop -> [Subst]
+subsets p = map (zip vs) (bools (length vs)) where vs = rmdups (vars p)
+```
+
+
 
 #### Dates:
 - Concept Stage: 10/19

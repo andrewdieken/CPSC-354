@@ -159,7 +159,7 @@ For our 4 proposition examples defined above, the resulting truth tables are as 
 |T|F|T                  |
 |T|T|T                  |
   
-Finally we can get into some Haskell! The 4 propositions defined above can be defined in Haskell as follows:
+Finally we can get into some Haskell! The 4 propositions defined above can be defined in Haskell as follows (which we are going to use as our input for our final function!):
 
 ```haskell
 p1 :: Prop 

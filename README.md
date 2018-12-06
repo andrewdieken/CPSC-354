@@ -159,7 +159,27 @@ For our 4 proposition examples defined above, the resulting truth tables are as 
 |T|F|T                  |
 |T|T|T                  |
   
+Finally we can get into some Haskell! The 4 propositions defined above can be defined in Haskell as follows:
 
+```haskell
+p1 :: Prop 
+p1 = And (Var 'A') (Not (Var 'A'))
+```
+
+```haskell
+p2 :: Prop 
+p2 = Imply (And (Var 'A') (Var 'B')) (Var 'A')
+```
+
+```haskell
+p3 :: Prop 
+p3 = Imply (Var 'A') (And (Var 'A') (Var 'B'))
+```
+
+```haskell
+p4 :: Prop 
+p4 = Imply (And (Var 'A') (Imply (Var 'A') (Var 'B'))) (Var 'B')
+```
 
 #### Dates:
 - Concept Stage: 10/19

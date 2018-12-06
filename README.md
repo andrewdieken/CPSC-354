@@ -199,7 +199,7 @@ eval s (Imply p q) = eval s p <= eval s q
 ```
 Something to note that our group found interesting is that the the operator => defind above is implemented using the <= on logical values.
 
-Next, we need to consider all possible substitutions for the variables that the truth table contains. So, obviously we need to define a function that will return a list of all variables in a poroposition.
+Next, we need to consider all possible substitutions for the variables that the truth table contains. So, obviously we need to define a function that will return a list of all variables in a proposition.
 ```haskell
 vars :: Prop -> [Char]
 vars (Const _) = []

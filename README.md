@@ -181,7 +181,39 @@ p4 :: Prop
 p4 = Imply (And (Var 'A') (Imply (Var 'A') (Var 'B'))) (Var 'B')
 ```
 
-Our next step is to define a function that will give us a list of logical values of a given length. We can declare the function:
+Next, in order to evaluate a proposition into a logical value we need to know the value of each of its variables. This will be done by declaring a substitution as a lookup table. This look up table will:
+  - associate variable names to logical values
+  - use the Assoc type 
+```haskell
+type Subset = Assoc Char Bool
+```
+
+Next, we need a function that will evaluate a proposition given a substitution for its variable. This can be done using pattern matching on 5 possible forms that the propositions could have. We declare and define our function below:
+```haskell
+eval :: Subset -> Prop -> Bool
+eval _ (Const b) = b
+eval s (Var x) = find x s
+eval s (Not p) = not (eval s p)
+eval s (And p q) = eval s p && eval s q
+eval s (Imply p q) = eval s p <= eval s q
+```
+Something to note that our group found interesting is that the the operator => defind above is implemented using the <= on logical values.
+
+Next, we need to consider all possible substitutions for the variables that the truth table contains. So, obviously we need to define a function that will return a list of all variables in a poroposition.
+```haskell
+vars :: Prop -> [Char]
+vars (Const _) = []
+vars (Var x) = [x]
+vars (Not p) = vars p
+vars (And p q) = vars p ++ vars q
+vars (Imply p q) = vars p ++ vars q
+```
+Now that we have ways to:
+  - fine the value of each variable
+  - evaluate our proposition given a substitution for its variables
+  - return a list of all variables in our propostion
+
+we can move onto our next step which is to define a function that will give us a list of logical values of a given length. We can declare the function:
 
 ```haskell
 bools :: Int -> [[Bool]]
@@ -255,6 +287,31 @@ So, if we call our function 'subsets' on our proposition 'p2' our output would b
  [('A', True), ('B', True)]]
 ```
 
+FINALLY! We need to find out if our propostion is always true. We do this by defing a function that will check if our propostion evaluates to True for all possible substitutions.
+  - we are able to find all possible substitutions with the functions we have defined above. YAY!
+
+We can declare and define our final function as follows:
+```haskell
+isTrue :: Prop -> Bool
+isTrue p = and [eval s p | s <- subsets p]
+```
+
+Lets see how our function works with all of our propostions defined above:
+```haskell
+> isTrue p1
+False
+
+> isTrue p2
+True
+
+> isTrue p3
+False
+
+> isTure p4
+True
+```
+
+And we done!
 
 
 #### Dates:

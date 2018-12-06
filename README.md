@@ -181,6 +181,46 @@ p4 :: Prop
 p4 = Imply (And (Var 'A') (Imply (Var 'A') (Var 'B'))) (Var 'B')
 ```
 
+Our next step is to define a function that will give us a list of logical values of a given length. We can declare the function:
+
+```haskell
+bools :: Int -> [[Bool]]
+```
+
+For example if we want all 8 lists given 3 logical values we would call:
+
+```haskell 
+bools 3
+```
+
+And our output would be:
+
+[[False, False, False],
+ [False, False, True],
+ [False, True, False],
+ [False, True, True],
+ [True, False, False],
+ [True, False, True],
+ [True, True, False],
+ [True, True, True]]
+
+
+So, now that we have declared the function and defined what our output should be we can define our function!! Our first thought when defining our function was to think of our inputs, True and False, as binary digits. When thinking of our inputs this way we can then think of our function as just counting in binary over the appropriate range of numbers. In other words, our function would convert a non-negative integer into a binary number represented as a list of bits (Cool!).
+
+However, after thinking about our function this way we thought of a better way. To use recursion! For our base case where we are given 0 logical values we would return all lists of zero logical values. Then in our recursive call, taking an input of 'n' logical values, we just take 2 copies of the lists which are produced by our function bools (n-1), we just have to place False in front of each list (in the first copy) and True in front of each list (in the second copy) and obviously append the results.
+
+So now we can think of our output as:
+
+False |False|False|
+False |False|True |
+False |True|False |
+False |True|True  |
+True  |False|False|
+True  |False|True |
+True  |True|False |
+True  |True|True  |
+
+
 #### Dates:
 - Concept Stage: 10/19
 - Definition Stage: 10/29

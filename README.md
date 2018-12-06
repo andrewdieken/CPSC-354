@@ -84,6 +84,38 @@ Implement truth tables for formulas of propositional logic. We can use these to 
 
 - Download Haskell: https://www.haskell.org/platform/mac.html
 - Documentation: file:///Library/Haskell/ghc-8.4.3-x86_64/doc/start.html
+
+First things first, we want to define what propositions are. Every proposition will either take a value of True or False. These values are called the truth values. It is also important to note that all propositions will ahve a truth value.
+
+Here is an example that will hopefully clear up any confusion - 
+Ex) Consider the following proposition: October 21, 2012 was Sunday and Sunday is a holiday.
+
+- The given compound proposition is made up of two simple propositins,
+  - p = October 21, 2012 was Sunday
+  - q = Sunday is a holiday
+- If we check the 2012 calendar we can see that October 21st was on a Sunday. So, the truth value of proposition p is True.
+- Sunday is also a holiday, so the truth value of proposition q is True.
+- So, p = True and q = True
+
+Now that we have defined propositions, we can move into defining truth tables. A truth table is a complete list of possible truth values of a given proposition. Truth tables are made up of
+  - proposition values (True, False)
+  - variables (A, B, ..., Z)
+  - negation (-)
+  - conjunction (^)
+  - implication (=>)
+With the following defined we can conclude that the following are all true:
+  - A ^ - A
+  - (A ^ B) => A
+  - A => (A ^ B)
+  - (A ^ (A => B)) => B
+The above operators can also be defined using truth tables. Which is what we want!
+
+|A|-A|
+|-|--|
+|F|T |
+|T|F |
+  
+
 #### Dates:
 - Concept Stage: 10/19
 - Definition Stage: 10/29

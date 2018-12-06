@@ -104,12 +104,6 @@ Now that we have defined propositions, we can move into defining truth tables. A
   - conjunction (^)
   - implication (=>)
   
-With the following defined we can conclude that the following are all true:
-  - A ^ - A
-  - (A ^ B) => A
-  - A => (A ^ B)
-  - (A ^ (A => B)) => B
-  
 The above operators can also be defined using truth tables. Which is what we want!
 
 |A|-A|  
@@ -123,7 +117,49 @@ The above operators can also be defined using truth tables. Which is what we wan
 |F|T|T       |
 |T|F|T       |        
 |T|T|T       |
+
+|A|B|A=>B|
+|-|-|:--:|
+|F|F|T   |
+|F|T|T   |
+|T|F|F   |
+|T|T|T   |
   
+With the following defined, we can conclude that the following are all true:
+  - A ^ - A
+  - (A ^ B) => A
+  - A => (A ^ B)
+  - (A ^ (A => B)) => B
+  
+For our 4 proposition examples defined above, the resulting truth tables are as follows:
+
+|A|A ^ - A|
+|-|:-----:|
+|F|F      |
+|T|F      |
+
+|A|B|(A ^ B) => A|
+|-|-|:----------:|
+|F|F|T           |
+|F|T|T           |
+|T|F|T           |
+|T|T|T           |
+
+|A|B|A => (A ^ B)|
+|-|-|:----------:|
+|F|F|T           |
+|F|T|T           |
+|T|F|F           |
+|T|T|T           |
+
+|A|B|(A ^ (A => B)) => B|
+|-|-|:-----------------:|
+|F|F|T                  |
+|F|T|T                  |
+|T|F|T                  |
+|T|T|T                  |
+  
+
 
 #### Dates:
 - Concept Stage: 10/19
@@ -131,9 +167,6 @@ The above operators can also be defined using truth tables. Which is what we wan
 - Development Stage: 11/28
 - Testing Stage: 12/7
 
-#### Examples:
-- implement a calculator
-- spam filter
 
 # Exercises
 

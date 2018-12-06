@@ -110,10 +110,12 @@ With the following defined we can conclude that the following are all true:
   - (A ^ (A => B)) => B
 The above operators can also be defined using truth tables. Which is what we want!
 
-|A|-A|
-|-|--|
-|F|T |
-|T|F |
+|A|-A| . |A|B|(A^B)=>A|
+|-|--| . |-|-|:------:|
+|F|T | . |F|F|T       |
+|T|F | . |F|T|T       |
+         |T|F|T       |
+         |T|T|T       |
   
 
 #### Dates:

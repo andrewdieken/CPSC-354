@@ -227,3 +227,8 @@ True
 ```
 
 And we done!
+
+
+
+#### Note:
+The last week of school our team mate Matt got very ill and was not able to complete his part of the project. His part was to take our code and compile it into a working program. Because of his absence we were not able to effectivly check our code for bugs.

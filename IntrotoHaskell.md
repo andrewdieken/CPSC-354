@@ -8,7 +8,7 @@ When a function is applied to actual arguments the result is obtained by substit
 ## Functional Programming
 What is functional progamming? Functional programming can be viewed as a style of programming in whihc the basic method of computation is the application of functions to arguments. A functional programming language is on the supports and encourages the functional style. 
 
-## Haskell Offers You:
+## What Haskell Can Offer You
 - Substantially increased programmer productivity (Ericsson measured an improvement factor of between 9 and 25 using Erlang, a functional programming language similar to Haskell, in one set of experiments on telephony software).
 - Shorter, clearer, and more maintainable code.
 - Fewer errors, higher reliability.

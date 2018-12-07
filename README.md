@@ -19,7 +19,7 @@ As for the project itself, we haven't yet decided what to do with Haskell. we've
 #### Topic: [Functional Programming](https://github.com/andrewdieken/CPSC-354/blob/master/DefiningFunctions.md)
 
 # Project
-#### Truth Table
+#### [Truth Table](https://github.com/andrewdieken/CPSC-354/blob/master/Project.md)
 Implement truth tables for formulas of propositional logic. We can use these to decide whether a formula is a tautology (true in all interpretations) or satisfiable (true in at least one interpretation). The output could just be this classification, or it could be the full truth table, showing the value of the formula under each interpretation.
 
 - Download Haskell: https://www.haskell.org/platform/mac.html

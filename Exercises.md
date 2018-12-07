@@ -42,3 +42,12 @@ def binarySearch(arr, element):
         first = mid + 1
         return found
 ```
+
+**Exercise:** ARS (basic definitions)
+
+In the context of abstract reduction systems, define the notions of 
+- normal form, 
+- equivalence, 
+- unique normal form, 
+- confluence, 
+- termination. 

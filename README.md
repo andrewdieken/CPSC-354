@@ -16,7 +16,7 @@ As for the project itself, we haven't yet decided what to do with Haskell. we've
 #### Topic: [History of Haskell](https://github.com/andrewdieken/CPSC-354/blob/master/IntrotoHaskell.md) and [Types of Classes](https://github.com/andrewdieken/CPSC-354/blob/master/TypesandClasses.md)
 
 ### Alberto
-### Topic: [Functional Programming](https://github.com/andrewdieken/CPSC-354/blob/master/DefiningFunctions.md)
+#### Topic: [Functional Programming](https://github.com/andrewdieken/CPSC-354/blob/master/DefiningFunctions.md)
 
 # Project
 #### Truth Table

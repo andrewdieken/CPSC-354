@@ -37,6 +37,6 @@ Implement truth tables for formulas of propositional logic. We can use these to 
 
 # Exercises
 
-All of our exercises can be found [here](https://github.com/andrewdieken/CPSC-354/blob/master/Exercises.md) with an explination of the question and our answer!
+All of our exercises can be found [HERE](https://github.com/andrewdieken/CPSC-354/blob/master/Exercises.md) with an explination of the question and our answer!
 
 

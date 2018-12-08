@@ -43,6 +43,16 @@ def binarySearch(arr, element):
         return found
 ```
 
+# Definitions
+- Normal form: a is a normal form, or a is in normal form, if a is not reducible.
+- Unique normal form: If a has exactly one normal form. A has unique normal forms if no element of A reduces to different normal forms
+- Equivalence: 
+- Confluence/confluent: if whenever x reduces to y and z, then y and z are joinable.
+- Termination/terminating: if there is no infinite chain a0→a1→….
+- Joinable: a,b  are joinable, written as a↓b, if both a and b reduce to the same element
+- Curch-Rosser: if all equivalent elements are joinable
+- Normalising: if every element has a normal form
+
 **Exercise:** ARS (basic definitions)
 
 In the context of abstract reduction systems, define the notions of 

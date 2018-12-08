@@ -52,6 +52,7 @@ def binarySearch(arr, element):
 - Joinable: a,b  are joinable, written as a↓b, if both a and b reduce to the same element
 - Curch-Rosser: if all equivalent elements are joinable
 - Normalising: if every element has a normal form
+- Simply typed lambda calculus: strongly normalizing. Always halt
 
 **Exercise:** ARS (basic definitions)
 

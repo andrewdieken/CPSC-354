@@ -46,10 +46,10 @@ def binarySearch(arr, element):
 **Exercise:** ARS (basic definitions)
 
 In the context of abstract reduction systems, define the notions of 
-- normal form: a is in normal form if a is not reducible\
-- equivalence: 
+- normal form: a is in normal form if a is not reducible. a term to which no rule applies is called a normal form
+- equivalence: An equivalence relation is a relation that is reflexive, transitive and symmetric
 - unique normal form: if a has exactly one normal form
-- confluence: act or process of merging
+- confluence: act or process of merging. which terms in such a system can be rewritten in more than one way, to yield the same result
 - termination: if an ARS has a measure function, then it is terminating
 
 **Exercise** String Rewriting

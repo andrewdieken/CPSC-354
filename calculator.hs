@@ -9,7 +9,7 @@ import Text.Parsec.Language
 import Text.Parsec.Expr
 
 lexer :: TokenParser()
-lexer = makeTokenParser (javaStyle { opStart = oneOf "+-*/%", opLetter = oneOf "+-*/%" })
+lexer = makeTokenParser (javaStyle { opStart = oneOf "+-*/", opLetter = oneOf "+-*/" })
 
 parseNumber :: Parser Double
 parseNumber = do

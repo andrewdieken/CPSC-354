@@ -19,7 +19,12 @@ As for the project itself, we haven't yet decided what to do with Haskell. we've
 #### Topic: [Functional Programming](https://github.com/andrewdieken/CPSC-354/blob/master/DefiningFunctions.md)
 
 # Project
+#### [Simply Calculator](https://github.com/andrewdieken/CPSC-354/blob/master/calculator_README.md)
+To start off our project our group wanted to create a simply calculator using our programming language, Haskell. We wanted to build this first because there was pleaty of documentation and the concepts were fairly easy to grasp.
+
 #### [Truth Table](https://github.com/andrewdieken/CPSC-354/blob/master/Project.md)
+After we got our calculator working, we wanted to move onto a project that was much more challenging for us. We wanted a bigger challenge. So we decided to build a truth table application!
+
 Implement truth tables for formulas of propositional logic. We can use these to decide whether a formula is a tautology (true in all interpretations) or satisfiable (true in at least one interpretation). The output could just be this classification, or it could be the full truth table, showing the value of the formula under each interpretation.
 
 - Download Haskell: https://www.haskell.org/platform/mac.html

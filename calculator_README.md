@@ -40,6 +40,9 @@ lexer :: TokenParser()
 lexer = makeTokenParser (javaStyle { opStart = oneOf "+-*/", opLetter = oneOf "+-*/" })
 ```
 
+Here we have our number parser function. We will receive either a natural number or float. 
+- If we get an integer on the left we return `fromIntegral` which will bring it to a float
+- If we get a number on the right then we just return that number
 ```haskell
 parseNumber :: Parser Double
 parseNumber = do
@@ -49,6 +52,7 @@ parseNumber = do
     Right n -> return $ n
 ```
 
+Here we have our expression parser. We give it a list of operators and operator functions. It allows us to specify associativity and prefix or postfix operators.
 ```haskell
 parseExpression :: Parser Double
 parseExpression = (flip buildExpressionParser) parseTerm $ [
@@ -60,11 +64,13 @@ parseExpression = (flip buildExpressionParser) parseTerm $ [
     , Infix (reservedOp lexer "-" >> return (-)) AssocLeft ]]
 ```
 
+Here we have our parse term function. It will parse an expression with parenthesis or it will parse a number.
 ```haskell
 parseTerm :: Parser Double
 parseTerm = parens lexer parseExpression <|> parseNumber
 ```
 
+Here we have our parse input function. Similarly to the parseTerm function it will take in a double. It will run whitespace from the lexer and then parse and expression through the function `parseExpression`. It will return the value it parses.
 ```haskell
 parseInput :: Parser Double
 parseInput = do
@@ -74,6 +80,7 @@ parseInput = do
   return n
 ```
 
+Here we have our calculate function. It takes in a string and returns a string. This function will call the function `parseInput` defined above. `s` is the input that was given to `calculate`.
 ```haskell
 calculate :: String -> String
 calculate s =
@@ -84,7 +91,7 @@ calculate s =
     ret = parse parseInput "" s
 ```
 
-This is our `main` function.
+This is our `main` function. It will map our function `calculate` over the number of strings returned by `lines`.
 ```haskell
 main :: IO ()
 main = interact (unlines . (map calculate) . lines)

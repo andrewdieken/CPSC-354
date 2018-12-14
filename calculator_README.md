@@ -25,8 +25,7 @@ Example input:
 -- Name: Simply Haskell Calculator
 ```
 Here we are importing all of our library which we will be working with.
-Text.Parsec is a parsing libray within Haskell which we will use to help us parse the user input
-- [Text.Parsec](http://hackage.haskell.org/package/parsec-3.1.13.0/docs/Text-Parsec.html)
+[Text.Parsec](http://hackage.haskell.org/package/parsec-3.1.13.0/docs/Text-Parsec.html) is a parsing libray within Haskell which we will use to help us parse the user input.
 ```haskell
 import Text.Parsec
 import Text.Parsec.String
@@ -35,9 +34,10 @@ import Text.Parsec.Language
 import Text.Parsec.Expr
 ```
 
+Here we have defined a lexer, which is a Token Parser. Simply put, it will return a set of parsec parsers for us.
 ```haskell
 lexer :: TokenParser()
-lexer = makeTokenParser (javaStyle { opStart = oneOf "+-*/%", opLetter = oneOf "+-*/%" })
+lexer = makeTokenParser (javaStyle { opStart = oneOf "+-*/", opLetter = oneOf "+-*/" })
 ```
 
 ```haskell
@@ -84,6 +84,7 @@ calculate s =
     ret = parse parseInput "" s
 ```
 
+This is our `main` function.
 ```haskell
 main :: IO ()
 main = interact (unlines . (map calculate) . lines)

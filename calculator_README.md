@@ -34,7 +34,7 @@ import Text.Parsec.Language
 import Text.Parsec.Expr
 ```
 
-Here we have defined a lexer, which is a Token Parser. Simply put, it will return a set of parsec parsers for us.
+Here we have defined a lexer, which is a Token Parser. Simply put, it will return a set of parsec parsers for us. It will parse any of of the characters in the string "+-*/"
 ```haskell
 lexer :: TokenParser()
 lexer = makeTokenParser (javaStyle { opStart = oneOf "+-*/", opLetter = oneOf "+-*/" })

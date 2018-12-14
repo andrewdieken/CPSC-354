@@ -23,24 +23,33 @@ Example input:
 ```haskell
 -- Authors: Andrew Dieken, Matt McCortney, Alberto Garibay
 -- Name: Simply Haskell Calculator
-
-
+```
+Here we are importing all of our library which we will be working with.
+Text.Parsec is a parsing libray within Haskell which we will use to help us parse the user input
+- [Text.Parsec](http://hackage.haskell.org/package/parsec-3.1.13.0/docs/Text-Parsec.html)
+```haskell
 import Text.Parsec
 import Text.Parsec.String
 import Text.Parsec.Token
 import Text.Parsec.Language
 import Text.Parsec.Expr
+```
 
+```haskell
 lexer :: TokenParser()
 lexer = makeTokenParser (javaStyle { opStart = oneOf "+-*/%", opLetter = oneOf "+-*/%" })
+```
 
+```haskell
 parseNumber :: Parser Double
 parseNumber = do
   val <- naturalOrFloat lexer
   case val of
     Left i -> return $ fromIntegral i
     Right n -> return $ n
+```
 
+```haskell
 parseExpression :: Parser Double
 parseExpression = (flip buildExpressionParser) parseTerm $ [
     [ Prefix (reservedOp lexer "-" >> return negate)
@@ -49,18 +58,23 @@ parseExpression = (flip buildExpressionParser) parseTerm $ [
     , Infix (reservedOp lexer "/" >> return (/)) AssocLeft ]
     , [Infix (reservedOp lexer "+" >> return (+)) AssocLeft
     , Infix (reservedOp lexer "-" >> return (-)) AssocLeft ]]
+```
 
+```haskell
 parseTerm :: Parser Double
 parseTerm = parens lexer parseExpression <|> parseNumber
+```
 
+```haskell
 parseInput :: Parser Double
 parseInput = do
   whiteSpace lexer
   n <- parseExpression
   eof
   return n
+```
 
-
+```haskell
 calculate :: String -> String
 calculate s =
   case ret of
@@ -68,7 +82,9 @@ calculate s =
     Right n -> "answer: " ++ (show n)
   where
     ret = parse parseInput "" s
+```
 
+```haskell
 main :: IO ()
 main = interact (unlines . (map calculate) . lines)
 ```

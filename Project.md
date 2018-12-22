@@ -228,7 +228,33 @@ True
 
 And we done!
 
+Finalized code for truth tables. 
+For that haskell program you can enter any combination of AND/OR operators and true and false and it will spit out the result 
 
+(ex: truthTable(True||False&&False) would return True because you evaluate from left to right)
+
+```Haskell
+{-# LANGUAGE FlexibleInstances #-}
+--In GHCi, type "truthtable(&&)" or "truthTable(||)" without the quotes to test the program--
+
+--Get possible boolean outputs--
+getPossibleValues :: (Bool -> Bool) -> [Bool]
+getPossibleValues f = f <$> [True, False]
+
+--BoolExpression class that handles the construction of the truth tables--
+class BoolExpression exp where
+  truthTable :: exp -> [[Bool]]
+
+--Use of FlexibleInstances is necessary here since BoolExpression is being used with different kinds of input--  
+instance BoolExpression Bool where
+  truthTable x = [[x]]
+  
+instance BoolExpression a => BoolExpression (Bool -> a) where
+  truthTable exp = do
+    x <- [True, False]
+    table <- truthTable (exp x)
+    pure (x:table)
+```
 
 #### Note:
 The last week of school our team mate Matt got very ill and was not able to complete his part of the project. His part was to take our code and compile it into a working program. Because of his absence we were not able to effectivly check our code for bugs.

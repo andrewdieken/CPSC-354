@@ -1,0 +1,20 @@
+{-# LANGUAGE FlexibleInstances #-}
+--In GHCi, type "truthtable(&&)" or "truthTable(||)" without the quotes to test the program--
+
+--Get possible boolean outputs--
+getPossibleValues :: (Bool -> Bool) -> [Bool]
+getPossibleValues f = f <$> [True, False]
+
+--BoolExpression class that handles the construction of the truth tables--
+class BoolExpression exp where
+  truthTable :: exp -> [[Bool]]
+
+--Use of FlexibleInstances is necessary here since BoolExpression is being used with different kinds of input--  
+instance BoolExpression Bool where
+  truthTable x = [[x]]
+  
+instance BoolExpression a => BoolExpression (Bool -> a) where
+  truthTable exp = do
+    x <- [True, False]
+    table <- truthTable (exp x)
+    pure (x:table)
